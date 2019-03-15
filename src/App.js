@@ -8,7 +8,6 @@ import ReactGA from 'react-ga';
 import {onSuggestionsClearRequested, onSuggestionsFetchRequested, onChange, isCity, getSuggestions, getSuggestionValue, renderSuggestion, renderSectionTitle, getSectionSuggestions, getCountry } from './searchFunc.js';
 import {onResponse, getWeather, getForecast} from './weatherFunc.js';
 import {Api_Key, Analytics_ID} from './key.js';
-export const Api_Key = Api_Key;
 export let location = '';
 
 ReactGA.initialize(Analytics_ID);
