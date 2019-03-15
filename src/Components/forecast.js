@@ -4,40 +4,41 @@ import React from 'react'
 class Forecast extends React.Component {
 
     humanReadable = () => {
-        var i = 0;
+        let i = 0;
             this.props.currentForecast.list.map(item => {
                 //Human readable time
-                var secondsSinceEpoch = this.props.currentForecast.list[i].dt;
-                var date = new Date(secondsSinceEpoch * 1000);
-                var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                var day = days[date.getUTCDay()];
-                var utcHour = date.getUTCHours();
+                let secondsSinceEpoch = this.props.currentForecast.list[i].dt;
+                let date = new Date(secondsSinceEpoch * 1000);
+                let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                let day = days[date.getUTCDay()];
+                let utcHour = date.getUTCHours();
+                let hour = '000'
                 if (utcHour > 12) {
-                    var hour = utcHour - 12;
+                     hour = utcHour - 12;
                     hour = hour + "pm";
                 }
                 else {
                     if (utcHour === 12)  {
-                        var hour = utcHour + "pm"
+                         hour = utcHour + "pm"
                     }
                     else {
                         if (utcHour === 0) {
                             utcHour = 12;
                         }
-                        var hour = utcHour + "am"
+                         hour = utcHour + "am"
                     }
                 }
-                //var dateStr = [day, hour].join(" "); 
+                //let dateStr = [day, hour].join(" "); 
                 //this.props.currentForecast.list[i].dt = dateStr;
                 this.props.currentForecast.list[i].dt = day;
                 this.props.currentForecast.list[i].sys.pod = hour;
                 
                 //human readable temp
-                var humanTemp = Math.floor(item.main.temp);
+                let humanTemp = Math.floor(item.main.temp);
                 humanTemp = humanTemp + '°'
                 this.props.currentForecast.list[i].main.temp = humanTemp;
                 //meters per second to MPH
-                var imperialWind = Math.floor(this.props.currentForecast.list[i].wind.speed *  2.237);
+                let imperialWind = Math.floor(this.props.currentForecast.list[i].wind.speed *  2.237);
                 this.props.currentForecast.list[i].wind.speed = imperialWind;
 
                 i++;
@@ -51,25 +52,14 @@ class Forecast extends React.Component {
             this.humanReadable();
         }
     }
-    
-
-   State = {
-        0:0
-    }
-
-  
-
     componentDidMount() {
         this.humanReadable();
     }
 
     
     render() {
-
             return (
-
-                this.props.currentForecast.list.map(item => (
-                       
+                this.props.currentForecast.list.map(item => (                 
                     <div className="weatherTile" key={item.dt_txt} >
                         <p className="gravitas">{item.dt}</p>
                         <p className="gravitas">{item.sys.pod}</p>

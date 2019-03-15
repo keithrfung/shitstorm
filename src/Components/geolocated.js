@@ -10,9 +10,10 @@ class GeoTracking extends React.Component {
         ? <App />
         : this.props.coords
           ? <App longitude={this.props.coords.longitude} latitude={this.props.coords.latitude} />
-          : <div><h1>Asking the NSA for your current position...</h1> <div class="spinner">
-          <div class="double-bounce1"></div>
-          <div class="double-bounce2"></div>
+          : <div><h1>Asking the NSA for your current position...</h1> 
+          <div className="spinner">
+          <div className="double-bounce1"></div>
+          <div className="double-bounce2"></div>
         </div> </div>;
   }
 }

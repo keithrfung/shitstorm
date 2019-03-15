@@ -431,6 +431,21 @@ p {
     background-size: cover;
 }
 
+.weather50d {
+    background: url(../img/mistday.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.weather50n {
+    background: url(../img/mistnight.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .spinner {
     width: 40px;
     height: 40px;

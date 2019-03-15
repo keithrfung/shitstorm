@@ -3089,6 +3089,231 @@ export const cities = [
       {
         name: 'Waltham Forest',
       },
+      //ni
+      {
+        name: 'Belfast',
+      },
+      {
+        name: 'Newtownabbey',
+      },
+      {
+        name: 'Bangor',
+      },
+      {
+        name: 'Lisburn',
+      },
+      {
+        name: 'Ballymena',
+      },
+      {
+        name: 'Newtownards',
+      },
+      {
+        name: 'Carrickfergus',
+      },
+      {
+        name: 'Lurgan',
+      },
+      {
+        name: 'Newry',
+      },
+      {
+        name: 'Portadown',
+      },
+      {
+        name: 'Antrim',
+      },
+      {
+        name: 'Coleraine',
+      },
+      {
+        name: 'Larne',
+      },
+      {
+        name: 'Omagh',
+      },
+      {
+        name: 'Armagh',
+      },
+      {
+        name: 'Dundonald',
+      },
+      {
+        name: 'Dunmurry',
+      },
+      {
+        name: 'Strabane',
+      },
+      {
+        name: 'Banbridge',
+      },
+      {
+        name: 'Enniskillen',
+      },
+      {
+        name: 'Limavady',
+      },
+      {
+        name: 'Downpatrick',
+      },
+      {
+        name: 'Cookstown',
+      },
+      {
+        name: 'Holywood',
+      },
+      {
+        name: 'Craigavon',
+      },
+      {
+        name: 'Dungannon',
+      },
+      {
+        name: 'Comber',
+      },
+      {
+        name: 'Ballymoney',
+      },
+      {
+        name: 'Ballyclare',
+      },
+    ]
+  },
+  {
+    title: 'IE', // a few italian towns for testing
+    cities: [
+      {
+        name: 'Dublin',
+      },
+      
+      {
+        name: 'Cork',
+      },
+      {
+        name: 'Limerick',
+      },
+      {
+        name: 'Derry',
+      },
+      {
+        name: 'Dún Laoghaire¹',
+      },
+      {
+        name: 'Galway',
+      },
+      {
+        name: 'Waterford',
+      },
+      {
+        name: 'Dundalk',
+      },
+      {
+        name: 'Bray',
+      },
+      {
+        name: 'Drogheda',
+      },
+      {
+        name: 'Sligo',
+      },
+      {
+        name: 'Tralee',
+      },
+      {
+        name: 'Swords',
+      },
+      {
+        name: 'Kilkenny',
+      },
+      
+      {
+        name: 'Ennis',
+      },
+      {
+        name: 'Clonmel',
+      },
+      {
+        name: 'Wexford',
+      },
+      {
+        name: 'Athlone',
+      },
+     
+      {
+        name: 'Carlow',
+      },
+      {
+        name: 'Lucan',
+      },
+      {
+        name: 'Leixlip',
+      },
+      {
+        name: 'Malahide',
+      },
+      {
+        name: 'Droichead Nua',
+      },
+      {
+        name: 'Mullingar',
+      },
+      {
+        name: 'Navan',
+      },
+      {
+        name: 'Naas',
+      },
+      {
+        name: 'Greystones',
+      },
+      {
+        name: 'Letterkenny',
+      },
+      
+      {
+        name: 'Killarney',
+      },
+      {
+        name: 'Celbridge',
+      },
+      {
+        name: 'Tullamore',
+      },
+    
+      {
+        name: 'Portmarnock',
+      },
+      
+      {
+        name: 'Portlaoise',
+      },
+      {
+        name: 'Cóbh',
+      },
+      {
+        name: 'Ballina',
+      },
+      {
+        name: 'Arklow',
+      },
+      {
+        name: 'Shannon',
+      },
+      {
+        name: 'Balbriggan',
+      },
+      {
+        name: 'Enniscorthy',
+      },
+      {
+        name: 'Castlebar',
+      },
+      {
+        name: 'Mallow',
+      },
+      {
+        name: 'Skerries',
+      }
     ]
   },
   {
