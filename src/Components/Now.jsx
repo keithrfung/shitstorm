@@ -1,8 +1,6 @@
 import React from 'react'
 
-
-class Now extends React.Component {
-
+export default class Now extends React.Component {
     render() {
 
         return (
@@ -39,6 +37,3 @@ class Now extends React.Component {
         )
     }
 }
-
-
-export default Now

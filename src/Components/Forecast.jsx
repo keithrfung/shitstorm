@@ -1,8 +1,6 @@
 import React from 'react'
 
-
-class Forecast extends React.Component {
-
+export default class Forecast extends React.Component {
     humanReadable = () => {
         let i = 0;
             this.props.currentForecast.list.map(item => {
@@ -79,7 +77,5 @@ class Forecast extends React.Component {
             )
     }
 }
-
-export default Forecast
 
 

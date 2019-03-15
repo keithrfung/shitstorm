@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Autosuggest from 'react-autosuggest';
-import Now from './Components/now';
-import WeatherRow from './Components/weatherrow';
-import ShitTag from './Components/shittag';
-import WTF from './Components/wtf';
+import Now from './Components/Now';
+import WeatherRow from './Components/WeatherRow';
+import ShitTag from './Components/ShitTag';
+import WTF from './Components/WTF';
 import ReactGA from 'react-ga';
 import {onSuggestionsClearRequested, onSuggestionsFetchRequested, onChange, isCity, getSuggestions, getSuggestionValue, renderSuggestion, renderSectionTitle, getSectionSuggestions, getCountry } from './searchFunc.js';
 import {onResponse, getWeather, getForecast} from './weatherFunc.js';
@@ -12,7 +12,7 @@ export let location = '';
 
 ReactGA.initialize(Analytics_ID);
 
-class App extends React.Component {
+export default class App extends React.Component {
 
   state = {
     temperature: 'Loading', //the temperature doubles as a loading notification if the connection is slow
@@ -84,4 +84,3 @@ class App extends React.Component {
     )
   }
 }
-export default App;

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './css/style.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import GeoTracking from './Components/geolocated.js'
+import GeoTracking from './Components/GeoTracking'
 
 ReactDOM.render(<GeoTracking />, document.getElementById('root'));
 

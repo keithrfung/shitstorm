@@ -1,8 +1,7 @@
 import React from 'react';
-import App from '../App';
-import {geolocated} from 'react-geolocated';
+import App from '../../App';
  
-class GeoTracking extends React.Component {
+export default class GeoTracking extends React.Component {
   render() {
     return !this.props.isGeolocationAvailable
       ? <App />
@@ -17,10 +16,3 @@ class GeoTracking extends React.Component {
         </div> </div>;
   }
 }
- 
-export default geolocated({
-  positionOptions: {
-    enableHighAccuracy: false,
-  },
-  userDecisionTimeout: 5000,
-})(GeoTracking);

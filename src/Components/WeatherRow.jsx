@@ -1,9 +1,7 @@
 import React from 'react'
-import Forecast from './forecast';
+import Forecast from './Forecast';
 
-
-
-class WeatherRow extends React.Component {
+export default class WeatherRow extends React.Component {
 
     //handle left and right click take care of horizontal scrolling on the weather forecast section. The CSS 'scroll-behavior: smooth;' makes this nice and juicy
     handleRightClick() {
@@ -32,6 +30,3 @@ class WeatherRow extends React.Component {
         )
     }
 }
-
-
-export default WeatherRow
