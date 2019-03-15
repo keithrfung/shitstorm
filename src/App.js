@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Autosuggest from 'react-autosuggest';
-import {cities} from './variables.js';
 import Now from './Components/now';
 import WeatherRow from './Components/weatherrow';
 import ShitTag from './Components/shittag';
@@ -8,13 +7,11 @@ import WTF from './Components/wtf';
 import ReactGA from 'react-ga';
 import {onSuggestionsClearRequested, onSuggestionsFetchRequested, onChange, isCity, getSuggestions, getSuggestionValue, renderSuggestion, renderSectionTitle, getSectionSuggestions, getCountry } from './searchFunc.js';
 import {onResponse, getWeather, getForecast} from './weatherFunc.js';
-
-
-export const Api_Key = "8c5021109e1918aa1c478ce6b4f53c27";
+import {Api_Key, Analytics_ID} from './key.js';
+export const Api_Key = Api_Key;
 export let location = '';
 
-ReactGA.initialize('UA-136012452-1');
-// ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.initialize(Analytics_ID);
 
 class App extends React.Component {
 
@@ -44,7 +41,6 @@ class App extends React.Component {
   
   //as soon as the component mounts on page load, we trigger the API calls
   componentDidMount() {
-    //initializeReactGA()
     this.getWeather()
   };
 
@@ -55,14 +51,11 @@ class App extends React.Component {
       value,
       onChange: this.onChange
     };
-
-
     return (
       <div className={'weather'+this.state.icon}>
          <div className="wrapper">
             <ShitTag />
             <WTF />
-
             <Autosuggest 
               multiSection={true}
               suggestions={suggestions}
@@ -86,9 +79,7 @@ class App extends React.Component {
               subMessage={this.state.subMessage}
               icon={this.state.icon}
             />
-            <WeatherRow 
-              currentForecast={this.state.currentForecast}
-            />
+            <WeatherRow currentForecast={this.state.currentForecast}/>
         </div>
       </div>
     )
